@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css & bootstrap -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- js files -->
+    <script type="module" src="./javascript/main.js"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/c21b838598.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>🤔Emoji Quiz | Errate den Film!</title>
+  </head>
+  <body id="body">
+    <header>
+      <div class="nav is-flex">
+        <a id="btn-home" class="btn nav-btn"><span>Home</span></a>
+        <a id="btn-about" class="btn nav-btn"><span>About</span></a>
+      </div>
+    </header>
+    <main id="home">
+      <h1 class="main-title">Emoji Quiz</h1>
+      <section id="main-container" class="is-flex">
+        <div class="left is-flex">🤔 📽️</div>
+        <div class="right is-flex">
+          <ul class="rules-list">
+            <li>40 Sekunden, um zu erraten, welcher Film/Fernsehsendung sich hinter den Emojis verbirgt</li>
+            <li>Sie haben keinen Anhaltspunkt? Springen Sie zum nächsten</li>
+            <li>Viel Spaß beim erraten!</li>
+          </ul>
+          <a id="btn-start" >Los geht's!</a>
+        </div>
+      </section>
+    </main>
+    <section id="in-game" class="is-flex hide">
+      <div id="bg-img"></div>
+      <div id="timer" class="is-flex">
+        <div class="time-counter"></div>
+      </div>
+      <div class="game-container" class="is-flex">
+        <div class="emoji-box">
+          <ul class="emoji-list is-flex">
+          </ul>
+        </div>
+        <div class="result"></div>
+        <div class="is-flex input-ctn">
+          <input
+            autocomplete="off"
+            type="text"
+            name="answer"
+            id="user-input"
+            required
+          />
+          <label for="answer" class="label-answer">
+            <span class="content-answer">Was schätzen Sie</span>
+          </label>
+          <span class="validate">🍿</span>
+        </div>
+      </div>
+      <span id="btn-skip">Ich habe keine Ahnung ⏭️</span>
+      <aside id="score" class="is-flex"></aside>
+    </section>
+    <section id="about" class="hide is-flex">
+      <div class="about-container is-flex">
+        <div class="socials is-flex">
+            <a href="https://twitter.com/InformatikerW" target="_blank"><i class="fab fa-twitter social-icons"></i></a>
+          <a href="https://github.com/Informatiker-Welt" target="_blank"><i class="fab fa-github social-icons"></i></a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
